@@ -1,0 +1,45 @@
+.ascii-title {
+    margin-top: 90px;
+    justify-content: center;
+    display: flex;
+    color: aliceblue;
+    font-family: monospace; 
+    font-size: 20px;      
+    overflow-x: auto;      
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+p1 {
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+}
+
+p2 {
+    color: white;
+    font-size: 22px;
+    padding: 1rem 2rem;
+    margin-bottom: 10px;
+}
+
+.ts {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.portafolio {
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.mis-proyectos {
+    color: aliceblue;
+    font-size: 25px;
+}
+ul {
+    font-size: 20;
+    color: white;
+}

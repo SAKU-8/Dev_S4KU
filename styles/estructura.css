@@ -1,0 +1,38 @@
+body, html {
+    padding:0;
+    margin: 0;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(-23deg, rgb(51, 75, 137), rgb(20, 20, 20), rgb(189, 70, 185));
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 10s ease infinite;
+}
+
+@keyframes gradienteAnimacion {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p1 {
+    animation: slideUp 2s infinite alternate;
+}
+
+@keyframes p1 {
+    0% { 
+        transform: translateY(20px);
+        opacity: 0;
+    }    
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
