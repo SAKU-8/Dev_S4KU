@@ -1,3 +1,35 @@
+/*NAVEGACION*/
+nav {
+    background: black;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navlinks {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navlinks a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+
+/*BASE*/
 body, html {
     padding:0;
     margin: 0;
@@ -5,7 +37,7 @@ body, html {
 }
 
 body {
-    background: linear-gradient(-23deg, rgb(51, 75, 137), rgb(20, 20, 20), rgb(189, 70, 185));
+    background: linear-gradient(-23deg, rgb(55, 87, 166), rgb(20, 20, 20), rgb(159, 56, 155));
     background-size: 400% 400%;
     animation: gradienteAnimacion 10s ease infinite;
 }
@@ -36,3 +68,5 @@ p1 {
         opacity: 1;
     }
 }
+
+

@@ -1,63 +1,28 @@
-body, html {
-    padding:0;
-    margin: 0;
-    height: auto;
-}
-
-body {
-    background: linear-gradient(rgb(41, 79, 184), rgb(20, 20, 20), rgb(149, 53, 146));
-    background-size: 400% 400%;
-    animation: gradienteAnimacion 12s ease infinite;
-}
-
-@keyframes gradienteAnimacion {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
-nav {
-    background: black;
-
-}
-
-ul{
-    display: flex;
-    justify-content: right;
-
-}
-
-li {
-    padding: 18px;
-    list-style-type: none;
-}
-
-a {
-    color: aliceblue;
-    text-decoration: none;
-}
-
-h1 {
-    color: rgb(255, 255, 255);
-}
-
-
 .img-saku {
-  width: 550px;
-  height: auto;
-
+    border-radius: 4%;
+    width: 550px;
+    height: auto;
+    float: left;
 }
+
+/*REDES*/
 
 .redes {
     width: 20px;
     height: auto;
+}
 
+.youtube {
+    width: 60px;
+    height: auto;
+}
 
+.instagram {
+    width: 60px;
+    height: auto;
+}
+
+.github {
+    width: 60px;
+    height: auto;
 }
