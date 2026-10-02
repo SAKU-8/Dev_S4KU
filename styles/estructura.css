@@ -1,6 +1,6 @@
 /*ANIMACIONES*/
 html {
-    scroll-behavior: 100vh;
+    scroll-behavior: smooth;
 }
 
 /*NAVEGACION*/
