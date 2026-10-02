@@ -27,7 +27,7 @@ nav {
     list-style: none;
 }
 
-.navlinks:hover {
+.navlinks a:hover {
     color: rgb(61, 100, 184);
 }
 
