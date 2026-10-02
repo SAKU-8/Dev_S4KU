@@ -1,3 +1,8 @@
+/*ANIMACIONES*/
+html {
+    scroll-behavior: 100vh;
+}
+
 /*NAVEGACION*/
 nav {
     background: black;
@@ -20,6 +25,10 @@ nav {
     gap: 2rem;
     text-decoration: none;
     list-style: none;
+}
+
+.navlinks:hover {
+    color: rgb(61, 100, 184);
 }
 
 .navlinks a{
@@ -68,5 +77,6 @@ p1 {
         opacity: 1;
     }
 }
+
 
 
