@@ -28,8 +28,16 @@ nav {
     
 }
 
+.navlinks a:hover{
+    color: rgb(108, 82, 199);    
+}
+
 
 /*BASE*/
+html {
+    scroll-behavior: smooth;
+}
+
 body, html {
     padding:0;
     margin: 0;
@@ -67,6 +75,12 @@ p1 {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 
