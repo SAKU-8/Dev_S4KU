@@ -25,6 +25,11 @@ p2 {
     margin-bottom: 10px;
 }
 
+.email {
+    color: rgb(108, 82, 199);
+    text-decoration: none;
+}
+
 .ts {
     color: aliceblue;
     font-size: 25px;
