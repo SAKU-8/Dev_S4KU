@@ -20,14 +20,18 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
-nav {
+header {
     position: sticky;
     top: 0;
     z-index: 10;
+    background: rgba(40, 40, 40, 0.6);
+    backdrop-filter: blur(8px);
+}
+
+nav {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 2rem;
-    background: transparent;
+    padding: 0.75rem 2rem;
 }
 
 .navlinks {
@@ -96,6 +100,7 @@ body {
     border: none;
     border-top: 1px solid rgb(247, 243, 243);
     margin: 0 2rem;
+    
 }
 
 section {
@@ -113,7 +118,7 @@ section {
     background: #0000006d;
     border-radius: 12px;
     padding: 16px 20px;
-    margin: 0 2rem;
+    margin: 0 3rem;
     width: fit-content;
     min-width: 250px;
     min-height: 66px;
@@ -146,6 +151,75 @@ section {
 }
 
 .iconos img {
+    flex-wrap: wrap;   /* los íconos bajan de línea si no caben */
     width: 40px;
     height: auto;
+}
+
+.ascii-title{
+    font-size: min(20px, 2vw);
+}
+
+/* TABLET Y CELULAR */
+@media (max-width: 900px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .img-saku {
+        width: 100%;
+    }
+
+    .cuadro-texto {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* las redes pasan a una fila, debajo del texto, con línea arriba */
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 0;
+        padding-top: 16px;
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding: 0.5rem 1rem;
+    }
+
+    .navlinks a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .cuadro-texto p {
+        font-size: 18px;
+    }
+
+    .titulo-seccion {
+        font-size: 28px;
+    }
+
+    /* las columnas de Tech Stack se apilan */
+    .caja-columnas {
+        flex-direction: column;
+    }
+
+    .columna + .columna {
+        border-left: none;
+        padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 16px;
+    }
+
+    .etiqueta {
+        font-size: 18px;
+    }
 }
