@@ -1,5 +1,8 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik&display=swap" rel="stylesheet">
         <title>bienvenidos</title>
         <link rel="stylesheet" href="styles/imagenes.css">
         <link rel="stylesheet" href="styles/letras.css">
@@ -7,15 +10,16 @@
     </head>
     <body>
         <header>
-            <nav class="navegar">                
+            <nav class="navegar">
                 <ul class="navlinks">
+                    <li><a href="#presentacion">presentación</a></li>
                     <li><a href="#techstack">tech stack</a></li>
                     <li><a href="#portafolio">portafolio</a></li>
                     <li><a href="#misproyectos">mis proyectos</a></li>
                 </ul>
             </nav>
         </header>    
-
+        <section id="presentacion">
             <pre class="ascii-title">
                 _____               _____ _  _   _  ___    _ 
                 |  __ \            / ____| || | | |/ / |  | |
@@ -24,34 +28,59 @@
                 | |__| |  __/\ V / ____) |  | | | . \| |__| |
                 |_____/ \___| \_/ |_____/   |_| |_|\_\\____/ 
             </pre>
-            
-            <p1>Hola!</p1>
-            
+
             <div class="contenedor">
-                <img class="img-saku" src="assets/S4KU.png">
-                <p2>¡Qué tal! Soy Dev_S4KU, un desarrollador apasionado por el aprendizaje continuo y en constante búsqueda de nuevas experiencias en programación y tecnología. Te doy la bienvenida a mi primera página web, un proyecto creado con mucho esfuerzo que funciona como mi portafolio digital y currículum para futuros retos profesionales. Además, este sitio actúa como mi propio gestor de proyectos, el cual actualizo constantemente.
+                <img class="img-saku" src="assets/S4KU.png" alt="Dev_S4KU">
 
-Si tienes algo que decirme o quieres conocerme mejor, puedes seguirme en mis redes sociales o enviarme un correo a: <a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=devs4ku@gmail.com" target="_blank">devs4ku@gmail.com</a> en caso si quieras</p2>
-            
-            </div>
-            
-            <div class="redes">
-                <a href="https://youtube.com/@sakuyaartist?si=M1c1D6ooyQ4T420U">
-                    <img class="youtube" src="assets/youtubelogo.png"></a>
-                <a href="">
-                    <img class="instagram" src="assets/instagramlogo.png"></a>
-                <a href="https://github.com/SAKU-8">
-                    <img class="github" src="assets/githublogo.png"></a>
-            </div>
-            
+                <div class="cuadro-texto">
+                    <p class="parrafo1">¡Qué tal! Soy Dev_S4KU, un desarrollador apasionado por el aprendizaje continuo y en constante búsqueda de nuevas experiencias en programación y tecnología. Te doy la bienvenida a mi primera página web, un proyecto creado con mucho esfuerzo que funciona como mi portafolio digital y currículum para futuros retos profesionales. Además, este sitio actúa como mi propio gestor de proyectos, el cual actualizo constantemente. Si tienes algo que decirme o quieres conocerme mejor, puedes seguirme en mis redes sociales o enviarme un correo a: <a class="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=devs4ku@gmail.com" target="_blank">devs4ku@gmail.com</a> en caso si quieras contactarme</p>
 
-            <div class="ts">
-                <h2 id="techstack">Tech Stack:</h2>
-                    <img class="java" src="assets/javalogo.png">
-                    <img class="python" src="assets/pythonlogo.png">
-                    <img class="html" src="assets/htmllogo.png">
-                    <img class="css" src="assets/csslogo.png">
+                    <div class="redes">
+                        <a href="https://youtube.com/@sakuyaartist?si=M1c1D6ooyQ4T420U" target="_blank" rel="noopener noreferrer">
+                            <img class="youtube" src="assets/youtubelogo.png" alt="YouTube"></a>
+                        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                            <img class="instagram" src="assets/instagramlogo.png" alt="Instagram"></a>
+                        <a href="https://github.com/SAKU-8" target="_blank" rel="noopener noreferrer">
+                            <img class="github" src="assets/githublogo.png" alt="GitHub"></a>
+                    </div>
+                </div>
             </div>
+
+            <hr class="linea">
+        </section>
+        <section id="techstack">
+            <h2 class="titulo-seccion">Tech Stack</h2>
+            <div class="caja caja-columnas">
+                <div class="columna">
+                    <span class="etiqueta">FRONT-END</span>
+                    <div class="iconos">
+                        <img src="assets/htmllogo.png" alt="HTML">
+                        <img src="assets/csslogo.png" alt="CSS">
+                    </div>
+                </div>
+                <div class="columna">
+                    <span class="etiqueta">BACK-END</span>
+                    <div class="iconos"></div>
+                </div>
+                <div class="columna">
+                    <span class="etiqueta">FULL STACK</span>
+                    <div class="iconos"></div>
+                </div>
+            </div>
+
+            <h2 class="titulo-seccion">Lenguajes</h2>
+            <div class="caja">
+                <div class="iconos">
+                    <img src="assets/pythonlogo.png" alt="Python">
+                    <img src="assets/javalogo.png" alt="Java">
+                </div>
+            </div>
+
+            <h2 class="titulo-seccion">Otros</h2>
+            <div class="caja"><div class="iconos"></div></div>
+
+            <hr class="linea">
+        </section>
 
             <div class="portafolio">
                 <h2 id="portafolio">Portafolio:</h2>

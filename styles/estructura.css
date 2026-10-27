@@ -5,7 +5,7 @@ html {
 
 /*NAVEGACION*/
 nav {
-    background: black;
+    background: rgba(0, 0, 0, 0.083);
     padding: 1rem 2rem;
     display: flex;
     justify-content:right;
@@ -20,27 +20,39 @@ nav {
     font-family: 'Rubik', sans-serif;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
 .navlinks {
     display: flex;
-    gap: 2rem;
-    text-decoration: none;
+    gap: 0;
     list-style: none;
+    background: #000000;
+    border-radius: 12px;
+    padding: 4px;
 }
 
-.navlinks a:hover {
-    color: rgb(61, 100, 184);
-}
-
-.navlinks a{
+.navlinks a {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 10px;
     color: aliceblue;
     text-decoration: none;
-    
+    transition: background 0.2s;
 }
 
-.navlinks a:hover{
-    color: rgb(108, 82, 199);    
+.navlinks a:hover,
+.navlinks a.activo {
+    background: #1b1b1b;
+    color: aliceblue;
 }
-
 
 /*BASE*/
 html {
@@ -71,26 +83,69 @@ body {
     }
 }
 
-p1 {
-    animation: slideUp 2s infinite alternate;
-}
-
-@keyframes p1 {
-    0% { 
-        transform: translateY(20px);
-        opacity: 0;
-    }    
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .contenedor {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    align-items: stretch; 
+    gap: 24px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 2rem;
 }
 
+.linea {
+    border: none;
+    border-top: 1px solid rgb(247, 243, 243);
+    margin: 0 2rem;
+}
 
+section {
+    padding-bottom: 24px;
+}
 
+.titulo-seccion {
+    color: aliceblue;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 36px;
+    margin: 24px 2rem 12px;
+}
+
+.caja {
+    background: #0000006d;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 0 2rem;
+    width: fit-content;
+    min-width: 250px;
+    min-height: 66px;
+}
+
+.caja-columnas {
+    display: flex;
+    gap: 24px;
+}
+
+.columna + .columna {
+    border-left: 1px solid rgba(3, 3, 3, 0.373);
+    padding-left: 24px;
+}
+
+.etiqueta {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.366);
+    border-radius: 8px;
+    padding: 6px 14px;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+.iconos {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    min-height: 40px;
+}
+
+.iconos img {
+    width: 40px;
+    height: auto;
+}

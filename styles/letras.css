@@ -7,25 +7,51 @@
     font-size: 20px;      
     overflow-x: auto;      
 }
+p1 {
+    font-size: 50px;
+    color: aliceblue;
+    animation: slideUp 1.5s ease-out;
+}
 
+.parrafo1 {
+    font-size: 22px;
+    color: aliceblue;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 body {
     font-family: 'Rubik', sans-serif;
 }
 
-p1 {
-    color: aliceblue;
-    font-size: 50px;
+.cuadro-texto {
+    flex: 1;
     display: flex;
+    align-items: center;
+    gap: 24px;
+    background: #0000005f;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
 }
 
-p2 {
-    color: white;
-    font-size: 22px;
-    padding: 1rem 2rem;
-    margin-bottom: 10px;
+.cuadro-texto p {
+    flex: 1;
+}
+
+.cuadro-texto p:last-child {
+    margin-bottom: 0;
 }
 
 .email {
+
     color: rgb(108, 82, 199);
     text-decoration: none;
 }

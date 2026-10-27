@@ -1,15 +1,37 @@
 .img-saku {
     border-radius: 4%;
     width: 550px;
+    max-width: 100%;
     height: auto;
-    float: left;
+    flex-shrink: 0;
 }
 
 /*REDES*/
 
 .redes {
-    width: 20px;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 24px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);   /* la línea vertical */
+}
+
+@media (max-width: 900px) {
+    .redes {
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 16px;
+        border-left: none;
+        border-top: 2px solid rgb(108, 82, 199);
+    }
+}
+
+.redes img {
+    width: 45px;
+}
+
+.github {
+    filter: invert(1);   /* el logo es negro y no se ve sobre fondo oscuro */
 }
 
 .youtube {
